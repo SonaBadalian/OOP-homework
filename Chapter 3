@@ -1,0 +1,625 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        /*No.1*/
+        /*System.out.println("Please enter the a, b, c respectively");
+        double a = input.nextDouble();
+        double b = input.nextDouble();
+        double c = input.nextDouble();
+
+        double discriminant = Math.pow(b, 2) - 4 * a * c;
+        double r1 = (-b + Math.pow(discriminant, 0.5)) / 2 * a;
+        double r2 = (-b - Math.pow(discriminant, 0.5)) / 2 * a;
+
+        if (discriminant > 0) {
+            System.out.println("The roots are " + r1 + " and" + r2);
+        } else if (discriminant == 0) {
+            System.out.println("Equation has only one root " + r1);
+        } else {
+            System.out.println("The equation has no real roots");
+        }*/
+        
+        /*No.2*/
+        /*int number1 = (int)(System.currentTimeMillis() % 10);
+        int number2 = (int)(System.currentTimeMillis() / 10 % 10);
+        int number3 = (int)(System.currentTimeMillis() / 100 % 10);
+
+        System.out.println("What is "+ number1 + " + " + number2 + " + " + number3 + " ?");
+
+        int answer = input.nextInt();
+
+        System.out.println(number1 + " + " + number2 + " + " + number3 + " = " + answer + " is " +
+                (number1 + number2 + number3 == answer));*/
+                
+        /*No.3*/ 
+        /*System.out.println("Please enter enter the a, b, c, d, e, f respectively:"
+                + "ax +by = e" + "cx + dy = f");
+
+        double a = input.nextDouble();
+        double b = input.nextDouble();
+        double c = input.nextDouble();
+        double d = input.nextDouble();
+        double e = input.nextDouble();
+        double f = input.nextDouble();
+        double denominator = a*d - b*c;
+        if (denominator == 0 ) {
+            System.out.println("This equation has no solution");
+        } else {
+            double x = (e*d - b*f)/denominator;
+            double y = (a*f - e*c)/denominator;
+            System.out.println("The x is " + x + " and y is " + y);
+        }  */ 
+        
+        /*No.4*/         
+        /*int number = (int)(Math.random() * 12);
+        switch (number) {
+            case 0: System.out.println("January"); break;
+            case 1: System.out.println("February"); break;
+            case 2: System.out.println("March"); break;
+            case 3: System.out.println("April"); break;
+            case 4: System.out.println("May"); break;
+            case 5: System.out.println("June"); break;
+            case 6: System.out.println("July"); break;
+            case 7: System.out.println("August"); break;
+            case 8: System.out.println("September"); break;
+            case 9: System.out.println("October"); break;
+            case 10: System.out.println("November"); break;
+            case 11: System.out.println("December");
+        }     */           
+        /*No.5*/  
+        /*System.out.println("Note 0 is Sunday, 1 for Monday and so on " +
+                "Enter the integer of the day :");
+        int today = input.nextInt();
+
+        System.out.println("Please enter number of day elapsed since today");
+
+        int elapsedDays = input.nextInt();
+        int futureElapsedDay = (today + elapsedDays) % 7;
+
+        String[] daysOfWeek = {"Sunday", "Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"};
+
+        if (today > 6 || today < 0) {
+            System.out.println("Enter the day number between 0 and 6");
+        } else {
+            System.out.println("Today is :" + daysOfWeek[today] + " the future day is :" + daysOfWeek[futureElapsedDay]);
+        }    */
+        
+        /*No.6*/          
+        /*System.out.print("Enter weight in pounds: ");
+        double weight = input.nextDouble();
+
+        System.out.print("Enter feet: ");
+        double feet = input.nextDouble();
+
+        System.out.println("Enter inches: ");
+        double inches = input.nextDouble();
+
+        final double KILOGRAMS_PER_POUND = 0.45359237;
+        final double METERS_PER_INCH = 0.0254;
+        final double METERS_PER_FEET = 0.3048;
+
+        double weightInKilograms = weight * KILOGRAMS_PER_POUND;
+        double heightInMeters = feet * METERS_PER_FEET + inches * METERS_PER_INCH;
+        double bmi = weightInKilograms /
+                (heightInMeters * heightInMeters);
+
+        System.out.println("BMI is " + bmi);
+        if (bmi < 18.5)
+            System.out.println("Underweight");
+        else if (bmi < 25)
+            System.out.println("Normal");
+        else if (bmi < 30)
+            System.out.println("Overweight");
+        else
+            System.out.println("Obese");     */
+            
+        /*No.7*/        
+        /*System.out.print("Enter an amount in double, for example 11.56: ");
+        double amount = input.nextDouble();
+
+        int remainingAmount = (int)(amount * 100);
+
+        int numberOfOneDollars = remainingAmount / 100;
+        remainingAmount = remainingAmount % 100;
+
+
+        int numberOfQuarters = remainingAmount / 25;
+        remainingAmount = remainingAmount % 25;
+
+        int numberOfDimes = remainingAmount / 10;
+        remainingAmount = remainingAmount % 10;
+
+        int numberOfNickels = remainingAmount / 5;
+        remainingAmount = remainingAmount % 5;
+
+         int numberOfPennies = remainingAmount;
+
+        System.out.println("Your amount " + amount + " consists of");
+        if (numberOfOneDollars > 1)
+            System.out.println(" " + numberOfOneDollars + " dollars");
+        else
+            System.out.println(" " + numberOfOneDollars + " dollar");
+
+        if (numberOfQuarters > 1)
+            System.out.println(" " + numberOfQuarters + " quarters ");
+        else
+            System.out.println(" " + numberOfQuarters + " quarter ");
+
+        if (numberOfDimes > 1)
+            System.out.println(" " + numberOfDimes + " dimes");
+        else
+            System.out.println(" " + numberOfDimes + " dime");
+
+        if (numberOfNickels > 1)
+            System.out.println(" " + numberOfNickels + " nickels");
+        else
+            System.out.println(" " + numberOfNickels + " nickel");
+
+        if (numberOfPennies > 1)
+            System.out.println(" " + numberOfPennies + " pennies");
+        else
+            System.out.println(" " + numberOfNickels + " penny");*/
+            
+        /*No.8*/ 
+        /*System.out.println("Enter 3 integers ");
+        double numberOne = input.nextDouble();
+        double numberTwo = input.nextDouble();
+        double numberThree = input.nextDouble();
+
+
+        if ((numberOne < numberTwo) && (numberTwo < numberThree))
+            System.out.println("The non-decreasing order is " + numberOne + " >" + numberTwo + " >" + numberThree );
+        else if ((numberTwo < numberOne) && (numberOne < numberThree))
+            System.out.println("The non-decreasing order is " + numberTwo + " >" + numberOne + " >" + numberThree );
+        else if ((numberTwo < numberThree) && (numberThree < numberOne))
+            System.out.println("The non-decreasing order is " + numberTwo + " >" + numberThree + " >" + numberOne );
+        else if ((numberThree < numberTwo) && (numberTwo < numberOne))
+            System.out.println("The non-decreasing order is " + numberThree + " >" + numberTwo + " >" + numberOne );
+        else if ((numberOne < numberThree) && (numberThree < numberTwo))
+            System.out.println("The non-decreasing order is " + numberOne + " >" + numberThree + " >" + numberTwo );
+        else
+            System.out.println("The non-decreasing order is " + numberThree + " >" + numberOne + " >" + numberTwo );*/
+            
+        /*No.9*/  
+        /*System.out.println("Enter the first 9 digit of the an ISBN integer: ");
+        int firstNineDigit = input.nextInt();
+
+        int dOne = firstNineDigit / 1_0000_0000;
+        int dTwo = (firstNineDigit / 1000_0000) % 10;
+        int dThree = (firstNineDigit / 1000_000) % 10;
+        int dFour = (firstNineDigit / 100_000) % 10;
+        int dFive = (firstNineDigit / 100_00) % 10;
+        int dSix = (firstNineDigit / 1000) % 10;
+        int dSeven = (firstNineDigit / 100) % 10;
+        int dEight = (firstNineDigit / 10) % 10;
+        int dNine = firstNineDigit % 10;
+
+        int lastDigitOfIsbn = (dOne * 1 +
+                dTwo * 2 +
+                dThree * 3 +
+                dFour * 4 +
+                dFive * 5 +
+                dSix * 6 +
+                dSeven * 7 +
+                dEight * 8 +
+                dNine * 9) % 11;
+        if (lastDigitOfIsbn == 10)
+            System.out.println("The ISBN number is " + firstNineDigit + "X");
+        else
+            System.out.println("The ISBN number is " + firstNineDigit + lastDigitOfIsbn);*/
+            
+        /*No.10*/            
+        /*int numberOne = (int)(Math.random() * 100);
+        int numberTwo = (int)(Math.random() * 100);
+        System.out.println("What is " + numberOne + " + " + numberTwo + " ?");
+        int answer = input.nextInt();
+
+        if (numberOne + numberTwo == answer)
+            System.out.println("You are correct!");
+        else
+            System.out.println(numberOne + " + " + numberTwo + " should be " + (numberOne + numberTwo));   */     
+            
+        /*No.11*/    
+        /*System.out.println("Enter the number of the month: ");
+        int month = input.nextInt();
+
+        System.out.println("Enter the year ");
+        int year = input.nextInt();
+
+        String[] months = {"", "January" , "February", "March", "April", "May", "June",
+                "July", "August", "September", "October","November", "December"};
+
+        boolean isLeapYear = (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
+        boolean thirtyDayOfMonth = month % 2 == 0;
+        if (isLeapYear == true && thirtyDayOfMonth == true && month == 2)
+            System.out.println(months[month] + " " + year + " has 29 days");
+        else if (isLeapYear == true && thirtyDayOfMonth == true)
+            System.out.println(months[month] + " " + year + " has 30 days");
+        else if (isLeapYear == false && month == 2)
+            System.out.println(months[month] + " " + year + " has 28 days");
+        else
+            System.out.println(months[month] + " " + year + " has 31 days");        */
+            
+        /*No.12*/             
+        /*System.out.println("Enter 3 digit integer");
+        int number = input.nextInt();
+
+        if (number < 0)
+            number = Math.abs(number);
+
+        int inverseOfNumber = 100 * (number / 100) +
+                10 * ((number / 10) % 10) +
+                number / 100;
+
+        if ( number == inverseOfNumber)
+            System.out.println(number + " is a palindrome ");
+        else
+            System.out.println(number + " is not a palindrome");*/
+            
+        /*No.14*/  
+        /*double randomNumber = Math.random();
+        if (randomNumber < 0.5)
+            randomNumber = 0;
+        else
+            randomNumber = 1;
+        System.out.println("Head or Tail ? Enter 0 for Head and 1 for Tail");
+
+        byte headOrTail = input.nextByte();
+        if (headOrTail == 1 || headOrTail == 0)
+            System.out.println((randomNumber == headOrTail)? "Your guess is correct!" :"Your guess is incorrect");
+        else
+            System.out.println("Invalid entry please enter 0 for Head and 1 for Tail");*/
+            
+        /*No.15*/
+        /*System.out.println("Enter the lottery number: ");
+        int userTicketNumber = input.nextInt();
+
+
+        int firstDigitLottery = lottery / 100;
+        int secondDigitLottery = (lottery / 10) % 10;
+        int lastDigitLottery = lottery % 10;
+
+        int firstDigitUser = userTicketNumber / 100;
+        int secondDigitUser = (userTicketNumber / 10) % 10;
+        int lastDigitUser = userTicketNumber % 10;
+
+        System.out.println("The lottery number is: " + lottery);
+        System.out.println("Your ticket number is: " + userTicketNumber);
+        if (lottery == userTicketNumber) {
+            System.out.println("Congrats! you won 10,000 usd!");
+        } else if ((firstDigitUser == firstDigitLottery || firstDigitUser == secondDigitLottery || firstDigitUser == lastDigitLottery) &&
+                (secondDigitUser == firstDigitLottery || secondDigitUser == secondDigitLottery || secondDigitUser == lastDigitLottery) &&
+                (lastDigitUser == firstDigitLottery || lastDigitUser == secondDigitLottery || lastDigitUser == lastDigitLottery))
+            System.out.println("Match all digits: you win 3,000 usd!");
+        else if ((firstDigitUser == firstDigitLottery || firstDigitUser == secondDigitLottery || firstDigitUser == lastDigitLottery) ||
+                (secondDigitUser == firstDigitLottery || secondDigitUser == secondDigitLottery || secondDigitUser == lastDigitLottery) ||
+                (lastDigitUser == firstDigitLottery || lastDigitUser == secondDigitLottery || lastDigitUser == lastDigitLottery))
+            System.out.println("Match only one digits: you win 1,000 usd! Please note that there are extra prize for two digit match");
+        else
+            System.out.println("No match try next time :)"); */
+            
+        /*No.16*/
+        /*int yCordinate = -100 + (int)(Math.random() * 200 + 1);
+        int xCordinate = -50 + (int)(Math.random() * 100 + 1);
+
+        System.out.println("This cordinate is inside of our rectangle " + "(" + xCordinate + "," + yCordinate + ")");   */
+        
+        /*No.17*/  
+        /*int computerChoice = (int)(Math.random() * 3);
+
+        System.out.println("scissor (0), rock (1), paper (2): ");
+        int userChoice = input.nextInt();
+
+        String[] rockScissorPaper = {"scissor", "rock", "paper"};
+
+        if (computerChoice == 0 && userChoice ==2)
+            System.out.println(" The computer is scissor. You are paper. You lost");
+        else if (computerChoice == 0 && userChoice == 1)
+            System.out.println(" The computer is scissor. You are rock. You won");
+        else if (computerChoice == 1 && userChoice == 0)
+            System.out.println(" The computer is rock. You are scissor. You lost");
+        else if (computerChoice == 1 && userChoice == 2)
+            System.out.println(" The computer is rock. You are paper. You won");
+        else if (computerChoice == 2 && userChoice == 0)
+            System.out.println(" The computer is paper. You are scissor. You won");
+        else if (computerChoice == 2 && userChoice == 1)
+            System.out.println(" The computer is paper. You are rock. You lost");
+        else
+            System.out.println(" The computer is " + rockScissorPaper[computerChoice] +
+                    ". You are " + rockScissorPaper[userChoice] + " too. " +
+                    " It is a draw" );*/
+                    
+        /*No.18*/                    
+        /*System.out.println("Enter the weight in pounds");
+        double weight = input.nextDouble();
+
+        if (weight <= 0)
+            System.out.println("Invalid input");
+        else if (0 < weight && weight <= 1)
+            System.out.println("The cost of the shipment is 3.50 usd");
+        else if (1 < weight && weight <= 3)
+            System.out.println("The cost of the shipment is 5.50 usd");
+        else if (3 < weight && weight <= 10)
+            System.out.println("The cost of the shipment is 8.50 usd");
+        else if (10 < weight && weight <= 20)
+            System.out.println("The cost of the shipment is 10.50 usd");
+        else
+            System.out.println("The package cannot be shipped");*/ 
+            
+        /*No.19*/
+        /*System.out.println("Enter the cordinate of each edge of the triangle" +
+                "Enter with following order_  x1, y1, x2, y2, x3, y3");
+        double x1 = input.nextDouble();
+        double y1 = input.nextDouble();
+        double x2 = input.nextDouble();
+        double y2 = input.nextDouble();
+        double x3 = input.nextDouble();
+        double y3 = input.nextDouble();
+
+        double side1 = Math.pow((Math.pow(x2-x1,2)+Math.pow(y2-y1,2)),0.5);
+        double side2 = Math.pow((Math.pow(x3-x2,2)+Math.pow(y3-y2,2)),0.5);
+        double side3 = Math.pow((Math.pow(x3-x1,2)+Math.pow(y3-y1,2)),0.5);
+
+        double perimeter = side1 + side2 + side3;
+        double sum1 = x1 + y1;
+        double sum2 = x2 + y2;
+        double sum3 = x3 + y3;
+
+        if ((sum1 > (sum2 + sum3)) ||
+                (sum2 > (sum3 + sum1)) ||
+                (sum3 > (sum1 + sum2)))
+            System.out.println("Input is invalid.");
+        else
+            System.out.println("perimeter is " + perimeter);*/        
+        /*No.20*/        
+        /*System.out.println("Enter the temperature in Fahrenheit between -58\u00B0F and 41\u00B0F:");
+        double temperature = input.nextDouble();
+
+        System.out.println("Enter the wind speed ( >= 2) in miles per hour: ");
+        double windSpeed = input.nextDouble();
+
+        double windChillTemperatute = 35.74 + 0.6215*temperature - 35.75*Math.pow(windSpeed,0.16) + 0.4275*temperature*Math.pow(windSpeed, 0.16);
+
+        if (-58 < temperature && temperature < 41 && windSpeed >= 2)
+            System.out.println("The wind chill temperature is: " + windChillTemperatute);
+        else
+            System.out.println("Invalid input! ");    */    
+        
+        /*No.21*/    
+        /*System.out.println("Enter the year: ");
+        int year = input.nextInt();
+
+        System.out.println("Enter month: 1−12: ");
+        int month = input.nextInt();
+
+        if (month == 1 || month == 2){
+            month += 12;
+            year -= 1;
+        }
+
+        System.out.println("Enter the day of the month: 1−31: ");
+        int day = input.nextInt();
+
+
+        int k = year % 100;
+        int j = year / 100;
+
+        String[] dayOfTheWeek = {"Saturday", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"};
+
+        int h = (day +
+                26 * (month + 1) / 10 +
+                k +
+                k / 4 +
+                j / 4 +
+                5 * j) % 7;
+
+        System.out.println("Day of the week is " + dayOfTheWeek[h]);*/        
+        
+        /*No.22*/    
+        /*System.out.println("Enter a point with two coordinates: e.g. x y ");
+        double x = input.nextDouble();
+        double y  = input.nextDouble();
+        double circle = x * x + y * y;
+
+        if (circle <= 100) {
+            System.out.println("The cordinate (" + x + "," + y + ")  is in the circle.");
+        }
+        else
+            System.out.println("The cordinate (" + x + "," + y + ")  is not in the circle." );*/
+        
+        /*No.23*/    
+        /*System.out.println("Enter a point with two coordinates: e.g. x y ");
+        double x = input.nextDouble();
+        double y  = input.nextDouble();
+
+               if (-5 <= x && x <= 5 && -2.5 <= y && y <= 2.5)
+            System.out.println("The cordinate (" + x + "," + y + ")  is in the rectangle.");
+        else
+            System.out.println("The cordinate (" + x + "," + y + ")  is not in the rectangle.");  */   
+            
+        /*No.24*/        
+        /*int pickACard = (int)(Math.random() * 52);
+        System.out.println(pickACard);
+        String[] deck = {"Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King"};
+
+        if (pickACard < 13)
+            System.out.println("The card you picked is " + deck[pickACard] + " of " + " Clubs");
+        else if (13 <= pickACard && pickACard < 26)
+            System.out.println("The card you picked is " + deck[pickACard - 13] + " of " + " Diamonds");
+        else if (26 <= pickACard && pickACard < 39)
+            System.out.println("The card you picked is " + deck[pickACard - 13 * 2] + " of " + " Hearts");
+        else
+            System.out.println("The card you picked is " + deck[pickACard - 13 * 3] + " of " + " Spades"); */
+            
+        /*No.25*/  
+        /*System.out.println("Enter x1 y1 x2 y2 x3 y3 x4 y4 respectively");
+        double x1 = input.nextDouble();
+        double y1 = input.nextDouble();
+        double x2 = input.nextDouble();
+        double y2 = input.nextDouble();
+        double x3 = input.nextDouble();
+        double y3 = input.nextDouble();
+        double x4 = input.nextDouble();
+        double y4 = input.nextDouble();
+
+        double a, b, c, d, e, f;
+        a = y1 - y2;
+        b = x1 - x2;
+        c = y3 - y4;
+        d = x3 - x4;
+        e = a * x1 - b * y1;
+        f = c * x2 - d * y2;
+
+        double denominator = a*d - b*c;
+
+        if (denominator == 0) {
+            System.out.println("The two lines are parallel");
+        } else {
+            double x = (e*d - b*f)/denominator;
+            double y = (a*f - e*c)/denominator;
+            System.out.println("The intersecting point is at (" + x + "," + y + ")" );
+        }        */
+        
+        /*No.26*/   
+        /*int number = input.nextInt();
+
+        boolean d5 = number % 5 == 0;
+        boolean d6 = number % 6 == 0;
+        boolean d5Andd6 = d5 & d6;
+
+        if (d5 == true & d6 == true)
+            System.out.println("Is " + number + " divisible by 5 and 6 ? " + d5Andd6);      */
+    
+        /*No.27*/   
+        /*System.out.println("Enter a point’s x- and y-coordinates: ");
+        double x = input.nextDouble();
+        double y = input.nextDouble();
+
+        if (y + (x / 2) <= 100)
+            System.out.println("The point is in the triangle");
+        else if (x < 0 || y < 0)
+            System.out.println("The point is not in the triangle");
+        else
+            System.out.println("The point is not in the triangle");*/      
+        /*No.29*/ 
+        /*System.out.println("Enter circle1’s center x-, y-coordinates, and radius:");
+        double x1 = input.nextDouble();
+        double y1 = input.nextDouble();
+        double r1 = input.nextDouble();
+
+        System.out.println("Enter circle2’s center x-, y-coordinates, and radius:");
+        double x2 = input.nextDouble();
+        double y2 = input.nextDouble();
+        double r2 = input.nextDouble();
+
+        double distanceBetweenCenters = Math.sqrt(Math.pow(x1 - x2 , 2) + Math.pow(y1 - y2 , 2));
+
+        if (distanceBetweenCenters < r1 - r2)
+            System.out.println("circle2 is inside circle1");
+        else if (distanceBetweenCenters <= r1 + r2)
+            System.out.println("circle2 overlaps circle1");
+        else
+            System.out.println("circle2 does not overlap circle1");*/
+            
+        /*No.30*/             
+        /*System.out.println("Enter the time zone :");
+        int timeZoneOffset = input.nextInt();
+        long totalMilliseconds = System.currentTimeMillis();
+        long totalSeconds = totalMilliseconds / 1000;
+        long currentSecond = totalSeconds % 60;
+        long totalMinutes = totalSeconds / 60;
+        long currentMinute = totalMinutes % 60;
+        long totalHours = totalMinutes / 60;
+        long currentHour = (totalHours + timeZoneOffset) % 24;
+        
+        if (currentHour > 12)
+            System.out.println("Current time in the specified time zone is: " +
+                    (int)(currentHour - 12) + ":" + currentMinute + ":" + currentSecond + " PM");
+        else
+            System.out.println("Current time in the specified time zone is: " +
+                    currentHour + ":" + currentMinute + ":" + currentSecond + " AM");      */      
+
+        /*No.31*/ 
+        /*System.out.println("Enter the exchange rate from dollars to RMB: ");
+        double exchangeRate = input.nextDouble();
+
+        System.out.println("Enter 0 to convert dollars to RMB and 1 vice versa: 0");
+        int status = input.nextInt();
+
+        if (status == 0){
+            System.out.println("Enter the dollar amount:");
+            double amount = input.nextDouble();
+            double money = amount * exchangeRate;
+            System.out.println(amount + " usd is " + (int)(money * 100 / 100) + " yuan" );
+        } else if (status == 1){
+            System.out.println("Enter the RMB amount:");
+            double amount = input.nextDouble();
+            double money = amount / exchangeRate;
+            System.out.println(amount + " yuan is " + (int)(money * 100 / 100) + " usd" );
+        }   */   
+        
+        /*No.32*/     
+        /*System.out.println("Enter three points for p0, p1, and p2: ");
+        double x0, y0, x1, y1, x2, y2;
+        x0 = input.nextDouble();
+        y0 = input.nextDouble();
+        x1 = input.nextDouble();
+        y1 = input.nextDouble();
+        x2 = input.nextDouble();
+        y2 = input.nextDouble();
+
+        double condition = (x1 - x0) * (y2 - y0) -
+                (x2 - x0) * (y1 -y0);
+        if (condition > 0)
+            System.out.println("p2 is on the left side of the line");
+        else if (condition == 0)
+            System.out.println("p2 is on the same line");
+        else
+            System.out.println("p2 is on the right side of the line");        */
+        
+        /*No.33*/  
+        /*System.out.println("Enter weight and price for package 1: ");
+        double w1 = input.nextDouble();
+        double p1 = input.nextDouble();
+
+        System.out.println("Enter weight and price for package 2: ");
+        double w2 = input.nextDouble();
+        double p2 = input.nextDouble();
+
+        if (w1/p1 < w2/p2)
+            System.out.println("Package 2 has a better price.");
+        else if (w1/p1 == w2/p2)
+            System.out.println(" Two packages have the same price.");
+        else
+            System.out.println("Package 1 has a better price.");   */     
+        /*No.34*/ 
+        /*System.out.println("Enter three points for p0, p1, and p2: ");
+        double x0, y0, x1, y1, x2, y2;
+        x0 = input.nextDouble();
+        y0 = input.nextDouble();
+        x1 = input.nextDouble();
+        y1 = input.nextDouble();
+        x2 = input.nextDouble();
+        y2 = input.nextDouble();
+
+        double condition = (x1 - x0) * (y2 - y0) -
+                (x2 - x0) * (y1 -y0);
+        if (condition > 0)
+            System.out.println("p2 is on the left side of the line");
+        else if (condition == 0)
+            if (x0 < x2 && x2 < x1){
+                System.out.println("(" + x2 + "," + y2 + ")" + " is on the line segment from" +
+                        "(" + x0 + "," + y0 + ") to" +
+                        "(" + x1 + "," + y1 + ")");
+            } else {
+                System.out.println("(" + x2 + "," + y2 + ")" + " is not on the line segment from" +
+                        "(" + x0 + "," + y0 + ") to" +
+                        "(" + x1 + "," + y1 + ")");
+            }
+        else
+            System.out.println("p2 is on the right side of the line");*/
+     
+    }
+}
