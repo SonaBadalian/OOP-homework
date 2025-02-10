@@ -1,0 +1,71 @@
+public class Main {
+
+    public static void main(String[] args) {
+        /* No.1*/
+        System.out.println("Welcome to java");
+        System.out.println("Welcome to Computer Science");
+        System.out.println("Programming is Fun!");
+        /* No.2*/        
+        for(int i = 0; i < 5; i++){
+            System.out.println("Welcome to Java");}
+        /* No.3*/ 
+        System.out.println("    J" + "   A   " + "V     V " + " A" );
+        System.out.println("    J" + "  A A  " + " V   V  " + "A A" );
+        System.out.println("J   J" + " AAAAA " + "  V V " + " AAAAA" );
+        System.out.println(" JJ  " + "A     A" + "   V" + "  A     A" );
+        /* No.4*/  
+        System.out.println("a" + "   a^2" + "   a^3");
+        for(int i = 1; i < 5 ; i++){
+            System.out.println(i + "   " + i*i + "    " +i*i*i);
+        }  
+       /* No.5*/
+        System.out.println((9.5*4.5-2.5*4)/(45.5-3.5));
+       /* No.6*/  
+        int sum = 0;
+        for(int i = 1; i <10; i++){
+            sum += i; }
+        System.out.println(sum);
+       /* No.7*/  
+        float sumpos = 0;
+        float sumneg = 0;
+        for(float i = 1.0f; i < 14; i+=4){
+            sumpos += 1.0/(i);
+        }
+        System.out.println(sumpos);
+
+        for(float k = 3.0f; k < 14; k+=4){
+            sumneg += 1.0/(k);
+        }
+        System.out.println(sumneg);
+        System.out.println(4*(sumpos-sumneg));
+       /* No.8*/ 
+        double pi = 3.14;
+        double r = 5.6;
+        double p = 2*r*pi;
+        double a = r*r*pi;
+    
+        System.out.println("Area is: "+ a + "and the perimeter is:" + p);  
+       /* No.9*/   
+        float w = 4.5f;
+        float h = 7.9f;
+        float area  = w * h;
+        float perimeter = 2*(w+h);
+        System.out.println("Area of the rectangle is: "+ area + "and perimeter of the rectangle is:" + perimeter); 
+       /* No.10*/     
+        double currentPopulation = 312032486;
+        double aYearInSeconds = 60*60*24*365;
+        double newborns = aYearInSeconds/7;
+        double deads = aYearInSeconds/13;
+        double immigrants = aYearInSeconds/45;
+        for(int i=1; i<=5; i++){
+            double newPopulation = currentPopulation + (newborns-deads+immigrants)*i;
+            System.out.println("Year " + i + " population is :" + newPopulation);
+        }
+       
+        
+        
+        
+    }
+
+    
+}
