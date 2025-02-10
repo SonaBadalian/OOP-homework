@@ -1,0 +1,286 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        
+        /*No.1*/
+        /*Scanner input = new Scanner(System.in);
+
+        System.out.println("Enter a degree in Celsius: ");
+        double celsius = input.nextDouble();
+
+        double fahrenheit = (9.0/5)*celsius + 32;
+        System.out.println(celsius + " Celsius is " + fahrenheit + "Fahrenheit");
+        input.close();*/
+
+        /*No.2*/        
+        /*final double PI = 3.14159;
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Enter the radius of the cylinder: ");
+        double radius = input.nextDouble();
+
+        System.out.println("Enter the length: ");
+        double length = input.nextDouble();
+
+        double area = radius * radius * PI;
+        double volume = area * length;
+
+        System.out.println(" Area of the cylinder is: "+ area +
+        " and volume is: "+ volume);
+        input.close(); */ 
+        
+        /*No.3*/           
+       /* Scanner input = new Scanner(System.in);
+        
+        System.out.println("Please enter a feet value: ");
+        double feet = input.nextDouble();
+        
+        double meter = feet/0.305;
+        System.out.println(feet + " feet is " + meter + "meters");*/
+        
+        /*No.4*/
+        /*Scanner input = new Scanner(System.in);
+
+        System.out.println("Enter a value in pounds: ");
+        double pounds = input.nextDouble();
+
+        double kilogram = pounds/0.454;
+        System.out.println(pounds + " Pounds is equal to " + kilogram + " kilograms"); */ 
+        
+        /*No.5*/  
+        /*Scanner input = new Scanner(System.in);
+
+        System.out.println("Enter the subtotal value: ");
+        double subtotal = input.nextDouble();
+
+        System.out.println("Enter the gratuity rate: (for example 5 means 5 %)");
+        double gratuity = input.nextDouble();
+
+        double gratuityAmount = (subtotal)*(gratuity/100);
+        double total = subtotal + gratuityAmount;
+
+        System.out.println(" The gratuity is "+gratuityAmount + " and the total is" + total);*/
+        
+        /*No.6*/  
+        /*Scanner input = new Scanner(System.in);
+
+        System.out.println("Enter a number between 0 and 1000: ");
+        int givenNumber = input.nextInt();
+
+        int lastDigit = givenNumber % 10;
+        int middleDigit = (givenNumber/ 10)% 10;
+        int firstDigit = givenNumber/ 100;
+
+        System.out.println("The sum of the digits is: " + (lastDigit+middleDigit+firstDigit));*/
+        
+        /*No.7*/ 
+        /*Scanner input = new Scanner(System.in);
+
+        System.out.println("Enter the number of minutes:");
+
+        long minutes = input.nextLong();
+        long years = minutes/(365*24*60); 
+        long remainingMinutes = minutes % (365*24*60);
+        long remainingDays = remainingMinutes / (23*60);
+
+
+        System.out.println(minutes + "minutes is approximately " + years + " years and " + remainingDays + "days" );*/
+                
+        /*No.8*/  
+       /*Scanner input = new Scanner(System.in);
+
+        System.out.println("Enter the time zone offset to GMT:");
+
+        int timeZoneOffset = input.nextInt();
+
+        long totalMilliseconds = System.currentTimeMillis();
+        long totalSeconds = totalMilliseconds / 1000;
+        long currentSecond = totalSeconds % 60;
+        long totalMinutes = totalSeconds / 60;
+        long currentMinute = totalMinutes % 60;
+        long totalHours = totalMinutes / 60;
+        long currentHour = (totalHours + timeZoneOffset) % 24;
+
+        System.out.println("The current time is: " +
+                currentHour + ":" + currentMinute + ":" + currentSecond);*/
+        
+        /*No.9*/         
+        /*double v1, v0, t;
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Enter the v0 v1 and t");
+        v0 = input.nextDouble();
+        v1 = input.nextDouble();
+        t = input.nextDouble();
+
+        double a = (v1-v0)/t;
+        System.out.println("The average acceleartion is: " + a);*/
+        
+        /*No.10*/         
+        /*Scanner input = new Scanner(System.in);
+        
+        System.out.println("Enter the amount of water in kilograms: ");
+        double M = input.nextDouble();
+        System.out.println("Enter the initial temperature: ");
+        double initialTemperature = input.nextDouble();
+        System.out.println("Enter the final temperature: ");
+        double finalTemperature = input.nextDouble();
+        double Q = M*(finalTemperature - initialTemperature)*4184;
+
+        System.out.println("The energy needed is: " + Q );*/
+        
+        /*No.11*/  
+        /*Scanner input = new Scanner(System.in);
+        System.out.println("Enter the number of year: ");
+        
+        double year = input.nextLong();
+
+        double CurrentPopulationUSA = 312032486;
+        double oneyearinseconds = 60*60*24*365;
+        double newbornperyear = oneyearinseconds/7;
+        double deadperyear = oneyearinseconds/13;
+        double immigrantperyear = oneyearinseconds/45;
+
+
+        double newpopulation = CurrentPopulationUSA + (newbornperyear-deadperyear+immigrantperyear)*year;
+        
+        System.out.println("The population in" + year + " years is:" + newpopulation);*/     
+
+        /*No.12*/          
+        /*Scanner input = new Scanner(System.in);
+
+        System.out.println("Enter the speed: ");
+        double v = input.nextDouble();
+
+        System.out.println("Enter the acceleration: ");
+        double a = input.nextDouble();
+
+        double length = Math.pow(v,2)/(2*a);
+
+        System.out.println("The minimum runway length for this airplane is: " + length);*/  
+        
+        /*No.13*/           
+        /*final double MONTHTLYINTERESRATE = 0.05/12;
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Enter the monthly saving amount: ");
+        double monthlySavingAmount = input.nextDouble();
+        System.out.println("Enter the number of months: ");
+        int numberMonths = input.nextInt();
+
+        double totalAmount = 0;
+
+        for(int i = 1; i <= numberMonths; i++){
+            totalAmount = (totalAmount+monthlySavingAmount)*(1 + MONTHTLYINTERESRATE);
+        }
+        System.out.print("After " + numberMonths + "months theaccount value is: " + totalAmount); */
+        
+        /*No.14*/ 
+        /*Scanner input = new Scanner(System.in);
+
+        System.out.println("Enter the weight in kg: ");
+        double weight = input.nextDouble();
+
+        System.out.println("Enter the height in meters: ");
+        double height = input.nextDouble();
+
+        double BMI = weight/(Math.pow(height,2));
+
+        System.out.println("Your BMI is: " + BMI);*/
+        
+        /*No.15*/ 
+        /*Scanner input = new Scanner(System.in);
+
+        System.out.println("Enter x1 and y1");
+        double x1 = input.nextDouble();
+        double y1 = input.nextDouble();
+
+        System.out.println("Enter x2 and y2");
+        double x2 = input.nextDouble();
+        double y2 = input.nextDouble();
+
+        double distance = Math.pow((Math.pow(x2-x1,2)+Math.pow(y2-y1,2)),0.5);
+
+        System.out.println("The distance between the two points is: "+ distance);*/
+        
+        /*No.16*/ 
+        /*Scanner input = new Scanner(System.in);
+
+        System.out.println("Enter the length side of the hexagon ");
+        double length = input.nextDouble();
+
+        double area = (3*Math.pow(3,0.5)*Math.pow(length, 2))/2;
+
+        System.out.println("The area of the hexagon is: " + area);*/ 
+        
+        /*No.17*/
+        /*Scanner input = new Scanner(System.in);
+
+        System.out.println("Enter the temperature in Fahrenheit between -58\u00B0F and 41\u00B0F:");
+        double temperature = input.nextDouble();
+
+        System.out.println("Enter the wind speed ( >= 2) in miles per hour: ");
+        double windSpeed = input.nextDouble();
+
+        double windChillTemperatute = 35.74 + 0.6215*temperature - 35.75*Math.pow(windSpeed,0.16) + 0.4275*temperature*Math.pow(windSpeed, 0.16);
+
+        System.out.println("The wind chill index is: " + windChillTemperatute); */               
+        
+        /*No.18*/
+        /*System.out.println("a" + "          b" + "          pow(a,b)");
+        for(int i = 1; i < 6; i++){
+            System.out.println(i + "          " + (i+1) + "          " + Math.pow(i, i+1));
+        }  */
+        
+        /*No.19*/  
+        /*Scanner input = new Scanner(System.in);
+
+        System.out.println("Enter the coordinates of three points separated by spaces like x1 y1 x2 y2 x3 y3: ");
+        double x1 = input.nextDouble();
+        double y1 = input.nextDouble();
+        double x2 = input.nextDouble();
+        double y2 = input.nextDouble();
+        double x3 = input.nextDouble();
+        double y3 = input.nextDouble();
+
+        double side1 = Math.pow((Math.pow(x2-x1,2)+Math.pow(y2-y1,2)),0.5);
+        double side2 = Math.pow((Math.pow(x3-x2,2)+Math.pow(y3-y2,2)),0.5);
+        double side3 = Math.pow((Math.pow(x3-x1,2)+Math.pow(y3-y1,2)),0.5);
+
+        double s = (side1 + side2 + side3)/2;
+        double area = Math.pow((s*(s - side1)*(s - side2)*(s - side3)),0.5);
+
+        System.out.println("The are of the triangle is: " + area);*/
+        
+        /*No.20*/  
+        /*Scanner input = new Scanner(System.in);
+
+        System.out.println("Enter balance and interest rate (e.g., 5 for 5%)");
+        double balance = input.nextDouble();
+        double annualInterestRate = input.nextDouble();
+
+        double interest = balance * (annualInterestRate/1200);
+
+        System.out.println("The interest is: " + interest);*/
+        
+        /*No.21*/    
+        /*Scanner input = new Scanner(System.in);
+
+        System.out.println("Enter investment amount: ");
+        double investmentAmount = input.nextDouble();
+
+        System.out.println("Enter annual interest rate in percentage: ");
+        double annualInterestRate = input.nextDouble();
+
+        System.out.println("Enter number of years: ");
+        double numberofYears = input.nextDouble();
+
+        double futureInvestmentValue = investmentAmount * Math.pow(1 + (annualInterestRate/1200), numberofYears*12);
+        futureInvestmentValue = Math.round(futureInvestmentValue*100)/100.0;
+
+        System.out.println("Future value is: " + futureInvestmentValue);*/
+
+        
+    }
+}
